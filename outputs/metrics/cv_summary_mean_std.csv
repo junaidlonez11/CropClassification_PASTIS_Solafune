@@ -1,0 +1,5 @@
+,accuracy,accuracy,macro_precision,macro_precision,macro_recall,macro_recall,macro_f1,macro_f1,macro_IoU,macro_IoU,MCC,MCC
+,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+split,,,,,,,,,,,,
+test,0.841,0.019,0.557,0.076,0.474,0.051,0.481,0.053,0.424,0.049,0.801,0.026
+val,0.84,0.018,0.552,0.091,0.473,0.051,0.481,0.056,0.424,0.049,0.8,0.024

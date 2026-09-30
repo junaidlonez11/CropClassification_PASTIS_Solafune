@@ -1,0 +1,13 @@
+# Data (too large for the repo; see README for where to place it)
+data/
+
+# Trained model (~765 MB); regenerate with `python -m src.train`
+outputs/models/
+*.joblib
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/

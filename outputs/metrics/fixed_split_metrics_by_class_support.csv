@@ -1,0 +1,4 @@
+group,n_classes,macro_precision,macro_recall,macro_f1,macro_IoU,macro_MCC
+Well-represented (>=25 patches),9,0.766,0.72,0.716,0.642,0.705
+Sparse (<25 patches),6,0.154,0.133,0.143,0.125,0.143
+All classes,15,0.521,0.485,0.487,0.435,0.48

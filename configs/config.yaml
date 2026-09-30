@@ -1,0 +1,55 @@
+# Configuration for the crop-classification pipeline (src/ scripts).
+# All paths are relative to the project root.
+
+paths:
+  data_dir: data/PASTIS_subset          # contains DATA_S2/, ANNOTATIONS/, metadata.geojson
+  splits_dir: splits
+  figures_dir: outputs/figures
+  metrics_dir: outputs/metrics
+  predictions_dir: outputs/predictions
+  model_path: outputs/models/rf_model.joblib   # git-ignored (~765 MB)
+
+data:
+  reflectance_scale: 10000   # L2A integers -> reflectance
+  void_class: 19             # removed before training and evaluation
+  patch_size: 128
+
+split:
+  # Fixed split (Task C); folds come from the "Fold" column of metadata.geojson
+  train_folds: [1, 2, 3]
+  val_folds: [4]
+  test_folds: [5]
+  all_folds: [1, 2, 3, 4, 5]  # used by the rotating 5-fold cross-validation
+
+model:
+  n_estimators: 200
+  max_depth: 20
+  min_samples_leaf: 5
+  class_weight: balanced
+  n_jobs: -1
+  random_state: 0
+
+evaluation:
+  well_represented_min_patches: 25   # threshold for the class-support grouping
+
+class_names:
+  0: Background
+  1: Meadow
+  2: Soft winter wheat
+  3: Corn
+  4: Winter barley
+  5: Winter rapeseed
+  6: Spring barley
+  7: Sunflower
+  8: Grapevine
+  9: Beet
+  10: Winter triticale
+  11: Winter durum wheat
+  12: Fruits/veg/flowers
+  13: Potatoes
+  14: Leguminous fodder
+  15: Soybeans
+  16: Orchard
+  17: Mixed cereal
+  18: Sorghum
+  19: Void

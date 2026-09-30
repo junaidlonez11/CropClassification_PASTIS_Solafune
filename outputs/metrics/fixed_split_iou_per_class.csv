@@ -1,0 +1,16 @@
+class_id,name,val_IoU,test_IoU
+0,Background,0.688,0.68
+1,Meadow,0.588,0.62
+2,Soft winter wheat,0.828,0.875
+3,Corn,0.891,0.867
+4,Winter barley,0.87,0.863
+5,Winter rapeseed,0.928,0.912
+6,Spring barley,0.0,0.0
+7,Sunflower,0.627,0.751
+10,Winter triticale,0.353,0.011
+11,Winter durum wheat,0.0,0.0
+12,Fruits/veg/flowers,0.0,0.0
+14,Leguminous fodder,0.109,0.104
+15,Soybeans,0.84,0.843
+17,Mixed cereal,0.0,0.0
+18,Sorghum,0.0,0.0
